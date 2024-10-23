@@ -29,9 +29,11 @@
 >"Without data, you're just another person with an opinion." – W. Edwards Deming
 
 ## Programming Block
-''' python
+'''python
+
 for i in range(5):
     print(i)
+    
 '''
 
 
