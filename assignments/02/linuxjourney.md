@@ -89,11 +89,32 @@ What command can you use to find the file type of a file?
 
 ## 7.cat
 ### Exercise
-Run the file command on a few different directories and files and note the output.
+Run cat on different files and directories. Then try to cat multiple files.
+
 *1.*
-*Intput:* file piasfile
-*Output:* piasfile: empty
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
 ### Quiz
 What's a good way to see the contents of a file?
 
 *Answer:* cat
+
+## 8.less
+### Exercise
+Run the file command on a few different directories and files and note the output.
+
+*1.*
+
+*Intput:* file piasfile
+
+*Output:* piasfile: empty
+### Quiz
+What command can you use to find the file type of a file?
+
+*Answer:* file
