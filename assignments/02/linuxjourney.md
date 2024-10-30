@@ -65,7 +65,6 @@ What command would you use to see hidden files?
 *3.* Touch the file and check the timestamp once again
 
 *Input:* $ touch piasfile
-
          $ ls -l piasfile
 
 *Output:* -rw-r--r-- 1 pia9c 197609 0 Oct 30 12:43 piasfile   
