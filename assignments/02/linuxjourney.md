@@ -67,5 +67,5 @@ Run the file command on a few different directories and files and note the outpu
 *Intput:* file piasfile
 *Output:* piasfile: empty
 ### Quiz
-What command can you use to find the file type of a file?
-*Answer:* file
+What's a good way to see the contents of a file?
+*Answer:* cat
