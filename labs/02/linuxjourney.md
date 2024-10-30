@@ -160,7 +160,7 @@ What is the command to clear the terminal?
 
 *Answer:* clear
 
-## 10.cp (Copy)
+## 10.cp (Copy) #!!!!!
 ### Exercise
 Copy over a couple of files, be careful not to overwrite anything important.
 
@@ -178,3 +178,164 @@ What flag do you need to specify to copy over a directory?
 
 *Answer:* -r
 
+## 11.mv (Move) #!!!!!
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+How do you rename a file called cat to dog?
+
+*Answer:* mv cat dog
+
+## 12.mkdir (Make Directory)
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
+
+## 13.rm (remove)
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
+
+## 14.find
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
+
+## 15.help
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
+
+## 16.man
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
+
+## 17.whatis
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
+
+## 18.alias
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
+
+## 19.exit
+### Exercise
+Run cat on different files and directories. Then try to cat multiple files.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What's a good way to see the contents of a file?
+
+*Answer:* cat
