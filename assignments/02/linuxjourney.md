@@ -105,7 +105,7 @@ What's a good way to see the contents of a file?
 
 *Answer:* cat
 
-## 8.less
+## 8.less #!!!!!!!!!
 ### Exercise
 Run the file command on a few different directories and files and note the output.
 
@@ -115,6 +115,67 @@ Run the file command on a few different directories and files and note the outpu
 
 *Output:* piasfile: empty
 ### Quiz
-What command can you use to find the file type of a file?
+How do you quit out of a less command?
 
-*Answer:* file
+*Answer:* q
+
+## 9.history
+### Exercise
+Navigate through your previous command history with the Up and Down keys. Play around with ctrl-R reverse search.
+
+*1.*
+
+*Intput:* $ history
+
+*Output:*   
+
+    1  date
+    2  whoami
+    3  cd
+    4  cd
+    5  cd.
+    6  cd .
+    7  ls -R
+    8  touch piasfile
+    9  -l piasfile
+   10  -I piasfile
+   11  ls -l piasfile
+   12  touch
+   13  ls -l piasfile
+   14  touch piasfile
+   15  ls -l piasfile
+   16  file piasfile
+   17  file Divisionstestverfahren
+   18  cat test
+   19  cat test.txt
+   20  file test.txt
+   21  file test
+   22  cat piasfile
+   23  less Trendprognose
+   24  less Trendprognose.pdf
+   25  less g Trendprognose.pdf
+   26  history
+### Quiz
+What is the command to clear the terminal?
+
+*Answer:* clear
+
+## 10.cp (Copy)
+### Exercise
+Copy over a couple of files, be careful not to overwrite anything important.
+
+*1.*
+
+*Intput:* $ cat piasfile
+
+*Output:* 
+
+*Intput:* $ cat test.txt
+
+*Output:* Test test test Pia
+### Quiz
+What flag do you need to specify to copy over a directory?
+
+*Answer:* -r
+
+
