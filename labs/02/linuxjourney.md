@@ -107,7 +107,7 @@ What's a good way to see the contents of a file?
 
 ## 8.less #!!!!!!!!!
 ### Exercise
-Run the file command on a few different directories and files and note the output.
+Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file. 
 
 *1.*
 
@@ -160,19 +160,13 @@ What is the command to clear the terminal?
 
 *Answer:* clear
 
-## 10.cp (Copy) #!!!!!
+## 10.cp (Copy)
 ### Exercise
 Copy over a couple of files, be careful not to overwrite anything important.
 
 *1.*
 
-*Intput:* $ cat piasfile
-
-*Output:* 
-
-*Intput:* $ cat test.txt
-
-*Output:* Test test test Pia
+*Intput:* $ cp test.txt /c/Uni/DIS11
 ### Quiz
 What flag do you need to specify to copy over a directory?
 
