@@ -105,15 +105,19 @@ What's a good way to see the contents of a file?
 
 *Answer:* cat
 
-## 8.less #!!!!!!!!!
+## 8.less 
 ### Exercise
 Run less on a file, then page up and around the file. Try searching for a specific word. Quickly navigate to the beginning or the end of the file. 
 
 *1.*
 
-*Intput:* file piasfile
+*Intput:* $ less /c/Users/pia9c/Test.txt
+          $ g
+          $ G
 
-*Output:* piasfile: empty
+*Output:* Komplette File wird ausgegeben
+          Es wird nach oben gescrollt
+          Es wird nach unten gescrollt
 ### Quiz
 How do you quit out of a less command?
 
@@ -172,19 +176,19 @@ What flag do you need to specify to copy over a directory?
 
 *Answer:* -r
 
-## 11.mv (Move) #!!!!!
+## 11.mv (Move) 
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Rename a file, then move that file to a different directory.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ mv piasfile piasnewfile
 
-*Output:* 
+*Output:* Name wurde geändert
 
-*Intput:* $ cat test.txt
+*Intput:* $ mv piasnewfile /c/Uni/DIS08
 
-*Output:* Test test test Pia
+*Output:* File wurde in entsprechenden Ordner verschoben
 ### Quiz
 How do you rename a file called cat to dog?
 
@@ -192,25 +196,26 @@ How do you rename a file called cat to dog?
 
 ## 12.mkdir (Make Directory)
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Make a couple of directories and move some files into that directory.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ mkdir -p /c/Uni/DIS08/TestDirectory
 
-*Output:* 
+*Output:* TestDirectory ist jetzt im Ordner DIS08
 
-*Intput:* $ cat test.txt
+*Intput:* $ mv Test2.txt /c/Uni/DIS08/TestDirectory
 
-*Output:* Test test test Pia
+*Output:* Test" ist jetzt in TestDirectory
 ### Quiz
-What's a good way to see the contents of a file?
+What command is use to make a directory?
 
-*Answer:* cat
+*Answer:* mkdir
 
-## 13.rm (remove)
+## 13.rm (remove) #!!!!!!!!!
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Create a file called -file (don't forget the dash!).
+Remove that file.
 
 *1.*
 
@@ -218,118 +223,174 @@ Run cat on different files and directories. Then try to cat multiple files.
 
 *Output:* 
 
+*2.*
+
 *Intput:* $ cat test.txt
 
 *Output:* Test test test Pia
 ### Quiz
-What's a good way to see the contents of a file?
+How do you remove a file called myfile?
 
-*Answer:* cat
+*Answer:* rm myfile
 
 ## 14.find
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Find a file from the root directory that has the word net in it.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ find /c/Users -name net
 
-*Output:* 
+*Output:* /c/Users/pia9c/anaconda3/Library/include/aws/core/net
 
-*Intput:* $ cat test.txt
-
-*Output:* Test test test Pia
 ### Quiz
-What's a good way to see the contents of a file?
+What option should I specify for find if I want to search by name?
 
-*Answer:* cat
+*Answer:* -name
 
 ## 15.help
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Run help on the echo command, logout command and pwd command.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ help echo
 
 *Output:* 
 
-*Intput:* $ cat test.txt
+echo: echo [-neE] [arg ...]
+    Write arguments to the standard output.
 
-*Output:* Test test test Pia
+    Display the ARGs, separated by a single space character and followed by a
+    newline, on the standard output.
+
+    Options:
+      -n        do not append a newline
+      -e        enable interpretation of the following backslash escapes
+      -E        explicitly suppress interpretation of backslash escapes
+
+    `echo' interprets the following backslash-escaped characters:
+      \a        alert (bell)
+      \b        backspace
+      \c        suppress further output
+      \e        escape character
+      \E        escape character
+      \f        form feed
+      \n        new line
+      \r        carriage return
+      \t        horizontal tab
+      \v        vertical tab
+      \\        backslash
+      \0nnn     the character whose ASCII code is NNN (octal).  NNN can be
+                0 to 3 octal digits
+      \xHH      the eight-bit character whose value is HH (hexadecimal).  HH
+                can be one or two hex digits
+      \uHHHH    the Unicode character whose value is the hexadecimal value HHHH.
+                HHHH can be one to four hex digits.
+      \UHHHHHHHH the Unicode character whose value is the hexadecimal value
+                HHHHHHHH. HHHHHHHH can be one to eight hex digits.
+
+    Exit Status:
+    Returns success unless a write error occurs.
+
+*2.*
+
+*Intput:* $ help logout
+
+*Output:* 
+
+logout: logout [n]
+    Exit a login shell.
+
+    Exits a login shell with exit status N.  Returns an error if not executed
+    in a login shell.
+
+*3.*
+
+*Intput:* $ help pwd
+
+*Output:* 
+
+pwd: pwd [-LPW]
+    Print the name of the current working directory.
+
+    Options:
+      -L        print the value of $PWD if it names the current working
+                directory
+      -P        print the physical directory, without any symbolic links
+      -W        print the Win32 value of the physical directory
+
+    By default, `pwd' behaves as if `-L' were specified.
+
+    Exit Status:
+    Returns 0 unless an invalid option is given or the current directory
+    cannot be read.
+
+
 ### Quiz
-What's a good way to see the contents of a file?
+How do you get quick command line help for built-in bash commands?
 
-*Answer:* cat
+*Answer:* help
 
-## 16.man
+## 16.man #!!!!!!!!
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Run the man command on the ls command.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ man ls
 
 *Output:* 
 
-*Intput:* $ cat test.txt
-
-*Output:* Test test test Pia
 ### Quiz
-What's a good way to see the contents of a file?
+How do you see the manuals for a command?
 
-*Answer:* cat
+*Answer:* man
 
-## 17.whatis
+## 17.whatis #!!!!!!!
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Run the whatis command on the less command.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ whatis less
 
 *Output:* 
 
-*Intput:* $ cat test.txt
-
-*Output:* Test test test Pia
 ### Quiz
-What's a good way to see the contents of a file?
+What command can you use to see a small description of a command?
 
-*Answer:* cat
+*Answer:* whatis
 
 ## 18.alias
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Create a couple of aliases then remove them.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ $ alias foobar='ls -la'
 
-*Output:* 
+*Output:* ls -la ist jetzt ~
 
-*Intput:* $ cat test.txt
+*Intput:* $ unalias foobar
 
-*Output:* Test test test Pia
+*Output:* foobar ist nichtmehr ls -la
 ### Quiz
-What's a good way to see the contents of a file?
+What command is used to make an alias?
 
-*Answer:* cat
+*Answer:* alias
 
 ## 19.exit
 ### Exercise
-Run cat on different files and directories. Then try to cat multiple files.
+Exit out of the shell and see what happens. Make sure you don't need to do anymore work in that shell
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ exit
 
-*Output:* 
+*Output:* Verlassen der Shell
 
-*Intput:* $ cat test.txt
-
-*Output:* Test test test Pia
 ### Quiz
-What's a good way to see the contents of a file?
+How can you exit from the shell?
 
-*Answer:* cat
+*Answer:* exit
