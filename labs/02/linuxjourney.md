@@ -212,22 +212,22 @@ What command is use to make a directory?
 
 *Answer:* mkdir
 
-## 13.rm (remove) #!!!!!!!!!
+## 13.rm (remove) 
 ### Exercise
 Create a file called -file (don't forget the dash!).
 Remove that file.
 
 *1.*
 
-*Intput:* $ cat piasfile
+*Intput:* $ touch -file
 
-*Output:* 
+*Output:* File created
 
 *2.*
 
-*Intput:* $ cat test.txt
+*Intput:* $ rm -file
 
-*Output:* Test test test Pia
+*Output:* File removed
 ### Quiz
 How do you remove a file called myfile?
 
@@ -332,7 +332,7 @@ How do you get quick command line help for built-in bash commands?
 
 *Answer:* help
 
-## 16.man #!!!!!!!!
+## 16.man 
 ### Exercise
 Run the man command on the ls command.
 
@@ -340,14 +340,14 @@ Run the man command on the ls command.
 
 *Intput:* $ man ls
 
-*Output:* 
+*Output:* manuel opened
 
 ### Quiz
 How do you see the manuals for a command?
 
 *Answer:* man
 
-## 17.whatis #!!!!!!!
+## 17.whatis 
 ### Exercise
 Run the whatis command on the less command.
 
@@ -355,7 +355,7 @@ Run the whatis command on the less command.
 
 *Intput:* $ whatis less
 
-*Output:* 
+*Output:* Brief describtion of less
 
 ### Quiz
 What command can you use to see a small description of a command?
