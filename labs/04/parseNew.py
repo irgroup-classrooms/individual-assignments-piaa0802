@@ -11,7 +11,7 @@ def main():
     regex = r'\d+'
     order_number_regex = r'Order #(\d+)' #Task 1
     product_names_regex = r'Product: (\w+)' #Task 2
-    price_regex = r'Price: (\$\d+\.\d{2}))' #Task 3
+    price_regex = r'Price: (\$\d+\.\d{2})' #Task 3
     order_dates_regex = r'Date: (\d{4}-\d{2}-\d{2})' #Task 4
 
     # Match the regex with the text
@@ -21,12 +21,24 @@ def main():
     prices = re.findall(price_regex, text) #Task 3
     order_dates = re.findall(order_dates_regex, text) #Task 4
 
+    products_over_500 = [] #Task5
+    for i in prices:
+        price = float(i.replace('$', ''))
+        if price > 500:
+            expensive_product = price
+            products_over_500.append(expensive_product)
+    
+    order_dates_format = []
+    for i in order_dates:
+         
+
     # Print the results
     print(orders)
     print(order_numbers) #Task 1
     print(product_names) #Task 2
     print(prices) #Task 3
     print(order_dates) #Task 4
+    print(products_over_500) #Task5
     
 
 if __name__ == '__main__':
