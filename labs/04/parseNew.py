@@ -1,5 +1,5 @@
 import re 
-
+from collections import Counter
 
 def main():
     
@@ -28,17 +28,35 @@ def main():
             expensive_product = price
             products_over_500.append(expensive_product)
     
-    order_dates_format = []
+    order_dates_format = [] #Task 6
     for i in order_dates:
-         
+         new_date = re.sub (r'(\d{4})-(\d{2})-(\d{2})', r'\3/\2/\1', i)
+         order_dates_format.append(new_date)
+
+    products_over_6char = [] #Task 7
+    for i in product_names:
+        if len(i) > 6:
+            products_over_6char.append(i)
+    
+    products_count = Counter(product_names) #Task 8
+
+    prices_ending_99 = re.findall(r'Product: [A-Za-z]+, Price: \$\d+\.99',text) #Task 9
+    
+    cheapest_product = min(prices) #Task 10
+    cheapest_product = float(cheapest_product.replace('$', ''))
 
     # Print the results
     print(orders)
-    print(order_numbers) #Task 1
-    print(product_names) #Task 2
-    print(prices) #Task 3
-    print(order_dates) #Task 4
-    print(products_over_500) #Task5
+    print("All order numbers: ", order_numbers) #Task 1
+    print("All product names: ", product_names) #Task 2
+    print("All prices: ", prices) #Task 3
+    print("All order dates: ", order_dates) #Task 4
+    print("All order products priced over $500: ", products_over_500) #Task 5
+    print("All order numbers: ", order_dates_format) #Task 6
+    print("All products that have more than 6 characters: ", products_over_6char) #Task 7
+    print("The occurance of each product in the text: ", products_count) #Task 8
+    print("All orders with prices ending in .99: ", prices_ending_99) #Task 9
+    print("The cheapest product: ", cheapest_product) #Task10
     
 
 if __name__ == '__main__':
